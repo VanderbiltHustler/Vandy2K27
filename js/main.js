@@ -10,6 +10,12 @@ scrollTo(0, 0);
 
 const PH = (t) => `[${t}]`;
 
+function renderHero(host, a) {
+  if (!a.hero) { host.remove(); return; }
+  const h = new Image(); h.src = url(a.hero); h.alt = a.heroAlt || ''; h.decoding = 'async';
+  host.append(h);
+}
+
 function renderHeader(host, a) {
   const field = (cls, tag, value, placeholder) => {
     const n = el(tag, cls);
@@ -45,6 +51,7 @@ try {
   if (site.profileOrder === 'roster') order.sort((a, b) => (rosterIds.indexOf(a.id) + 99) % 99 - (rosterIds.indexOf(b.id) + 99) % 99 || 0);
   else if (site.profileOrder === 'overall') order.sort((a, b) => (b.overall ?? -1) - (a.overall ?? -1));
 
+  renderHero(document.getElementById('hero'), article);
   renderHeader(document.getElementById('masthead'), article);
   await renderRoster(document.getElementById('roster-host'), { site, data, order });
   renderConclusion(document.getElementById('conclusion'), article);

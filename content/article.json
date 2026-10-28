@@ -1,5 +1,5 @@
 {
-  "_help": "Editable article header. Replace every [BRACKETED PLACEHOLDER]. Leave a value as \"\" to show the placeholder; intro is a list of paragraphs (HTML allowed). conclusion works like intro: a list of paragraphs shown after the last player (empty = placeholder).",
+  "_help": "Editable article header. Replace every [BRACKETED PLACEHOLDER]. Leave a value as \"\" to show the placeholder; intro is a list of paragraphs (HTML allowed). conclusion works like intro: a list of paragraphs shown after the last player (empty = placeholder). hero = banner image shown at the very top of the page (set to \"\" to hide).",
   "title": "Vanderbilt 2K27: If the ’Dores were in a video game",
   "dek": "What would Vanderbilt Men’s Basketball’s roster look like if it were put into a video game?",
   "author": "Tristan Rutman",
@@ -15,6 +15,10 @@
     "The ’Dores’ ceiling is dependent on how well its players can perform, regardless of Byington’s coaching pedigree. Given that, I wanted to quantitatively determine what Commodore Faithful can expect from this roster.",
     "I’ve taken the past few weeks to create a video game-style rating system for this season’s Vanderbilt Commodores. After closely monitoring three exhibition matchups (against Virginia, UAB and Miami), watching film from seasons past and referencing old statistics from college and high school, here's what I've come up with:"
   ],
-  "conclusion": ["Thus concludes this unique breakdown of Vanderbilt’s roster. These are subjective ratings, so there will certainly be room for disagreement. Overall, though, I hope this helps paint a picture of what to expect from each and every one of the Commodores in the upcoming season.",
-"Byington and his squad will face off against Bellarmine to open the season on Monday, Nov. 2, at 6:00 p.m. CDT in Memorial Gymnasium. "]
+  "conclusion": [
+    "Thus concludes this unique breakdown of Vanderbilt’s roster. These are subjective ratings, so there will certainly be room for disagreement. Overall, though, I hope this helps paint a picture of what to expect from each and every one of the Commodores in the upcoming season.",
+    "Byington and his squad will face off against Bellarmine to open the season on Monday, Nov. 2, at 6:00 p.m. CDT in Memorial Gymnasium. "
+  ],
+  "hero": "assets/hero.webp",
+  "heroAlt": "Vanderbilt 2K27: Vanderbilt men’s basketball players in action"
 }

@@ -1,0 +1,105 @@
+/* ==========================================================================
+   DESIGN TOKENS — the single place to restyle the site.
+   Active theme = <html data-theme="..."> (set from config/site.json or ?theme=).
+   Defaults below are the "vandy" theme; other themes override only what differs.
+   ========================================================================== */
+:root, :root[data-theme="vandy"] {
+  color-scheme: dark;
+  /* colors */
+  --c-bg: #0b0b0b;
+  --c-bg-alt: #121212;
+  --c-surface: #181818;
+  --c-surface-2: #222;
+  --c-text: #f4f1ea;
+  --c-text-muted: #aaa598;
+  --c-primary: #cfae70;        /* Vanderbilt gold */
+  --c-secondary: #ffffff;
+  --c-accent: #e8c77a;
+  --c-on-primary: #0b0b0b;
+  --c-border: #3a3629;
+  --c-focus: #ffd980;
+  --c-hotspot: rgba(207,174,112,.9);
+  --c-placeholder: #8a8574;
+  /* rating bars (tier colors — numbers always shown too) */
+  --bar-track: #2c2a24;
+  --bar-elite: #f3d68b;
+  --bar-high: #cfae70;
+  --bar-mid: #9d8658;
+  --bar-low: #6c6858;
+  --bar-na: #3a3a3a;
+  /* per-category bar gradients (card layout + hover card): [low-skill end = muted, high-skill end = vivid] */
+  --cat-finishing-from: #5b6678;  --cat-finishing-to: #1e90ff;   /* azure blue */
+  --cat-shooting-from: #626d55;   --cat-shooting-to: #84e22a;    /* lime green */
+  --cat-playmaking-from: #78695a; --cat-playmaking-to: #ff8a00;  /* orange */
+  --cat-defense-rebounding-from: #7a6162; --cat-defense-rebounding-to: #ff3b30;  /* red */
+  --cat-physicals-athleticism-from: #685f7c; --cat-physicals-athleticism-to: #9b4dff;  /* purple */
+  /* overall rating color: muted at low OVR, vivid at high OVR */
+  --ovr-lo: color-mix(in srgb, var(--c-primary) 25%, #77736a);
+  --ovr-hi: var(--c-accent);
+  /* typography */
+  --font-display: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+  --font-brand: "Agency FB Wide Black", "Agency FB", "Arial Narrow Bold", "Arial Narrow", var(--font-display);   /* sticky-bar title */
+  --font-title: "EB Garamond", Garamond, "Iowan Old Style", Georgia, serif;   /* article title */
+  --font-deck: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;           /* subtitle / dek */
+  --font-body: Georgia, "Times New Roman", serif;                              /* article + player writing */
+  --title-weight: 800;
+  --title-transform: uppercase;
+  --title-tracking: .02em;
+  --font-ui: "EB Garamond", Garamond, "Iowan Old Style", Georgia, serif;   /* labels, buttons, bar names, byline, cards */
+  --display-weight: 800;
+  --display-transform: uppercase;
+  --display-tracking: .02em;
+  --fs-base: 1.667rem;
+  --fs-small: .8125rem;
+  --fs-label: .78rem;
+  --fs-h1: clamp(2.4rem, 6vw, 4.6rem);
+  --fs-h2: clamp(1.8rem, 3.6vw, 2.8rem);
+  --fs-ovr: clamp(3.4rem, 8vw, 5.6rem);
+  --fs-ovr-card: 3.1rem;
+  /* shape */
+  --radius: 4px;
+  --radius-lg: 8px;
+  --border: 1px solid var(--c-border);
+  --border-strong: 2px solid var(--c-primary);
+  --shadow: 0 10px 30px rgba(0,0,0,.45);
+  --shadow-card: 0 14px 40px rgba(0,0,0,.65);
+  /* motion & effects */
+  --anim-speed: 180ms;
+  --anim-bars: 700ms;
+  --hover-lift: -2px;
+  --card-opacity: 97%;
+  --card-blur: 6px;
+  /* layout & spacing */
+  --space: 1rem;
+  --layout-width: 760px;       /* reading column */
+  --layout-wide: 1240px;       /* roster + profiles */
+  --header-h: 0px;             /* scroll offset (no sticky bar) */
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --c-bg: #07090f; --c-bg-alt: #0c1018; --c-surface: #121826; --c-surface-2: #1b2335;
+  --c-text: #eef2fa; --c-text-muted: #98a3ba;
+  --c-primary: #28d4ff; --c-secondary: #ffffff; --c-accent: #b6ff3c; --c-on-primary: #04121a;
+  --c-border: #27324a; --c-focus: #b6ff3c; --c-hotspot: rgba(40,212,255,.9);
+  --bar-track: #1d2638; --bar-elite: #b6ff3c; --bar-high: #28d4ff; --bar-mid: #3c8fd6; --bar-low: #596a8c;
+  --font-body: "Avenir Next", "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  --radius: 10px; --radius-lg: 16px;
+  --border-strong: 2px solid var(--c-primary);
+}
+
+:root[data-theme="editorial"] {
+  color-scheme: light;
+  --c-bg: #f6f2ea; --c-bg-alt: #ede7da; --c-surface: #fffdf8; --c-surface-2: #f1ebdd;
+  --c-text: #1c1a16; --c-text-muted: #5f5a4e;
+  --c-primary: #8a6a2f; --c-secondary: #1c1a16; --c-accent: #b3261e; --c-on-primary: #fffdf8;
+  --c-border: #d6ccb6; --c-focus: #b3261e; --c-hotspot: rgba(179,38,30,.9); --c-placeholder: #8c8571;
+  --bar-track: #e3dac6; --bar-elite: #b3261e; --bar-high: #1c1a16; --bar-mid: #5f5a4e; --bar-low: #9a937f;
+  --bar-na: #d8d2c2;
+  --font-display: "Playfair Display", "Iowan Old Style", Georgia, serif;
+  --display-weight: 700; --display-transform: none; --display-tracking: 0;
+  --font-ui: "Helvetica Neue", Arial, sans-serif;
+  --radius: 2px; --radius-lg: 2px;
+  --shadow: 0 6px 20px rgba(60,45,20,.12); --shadow-card: 0 12px 30px rgba(60,45,20,.28);
+  --card-opacity: 100%;
+}

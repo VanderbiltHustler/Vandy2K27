@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "source": "ratings.xlsx",
+    "sheet": "Ratings",
+    "generatedAt": "2026-10-27",
+    "scale": {
+      "min": 0,
+      "max": 99
+    },
+    "overallField": {
+      "column": "B",
+      "bold": true,
+      "formula": "=ROUND((SUM(C3:T3)/16),0)"
+    },
+    "categoryRatingFormula": "ROUND(AVERAGE(<category attribute columns>),0), read from workbook columns U-Y",
+    "note": "Values imported as stored in the workbook; nothing recalculated or altered."
+  },
+  "categories": [
+    {
+      "key": "finishing",
+      "label": "Finishing",
+      "attributes": [
+        {
+          "key": "layup",
+          "label": "Layup"
+        },
+        {
+          "key": "dunk",
+          "label": "Dunk"
+        },
+        {
+          "key": "post-scoring",
+          "label": "Post scoring"
+        }
+      ]
+    },
+    {
+      "key": "shooting",
+      "label": "Shooting",
+      "attributes": [
+        {
+          "key": "mid-range",
+          "label": "Mid-range"
+        },
+        {
+          "key": "3-point",
+          "label": "3-point"
+        },
+        {
+          "key": "free-throw",
+          "label": "Free throw"
+        }
+      ]
+    },
+    {
+      "key": "playmaking",
+      "label": "Playmaking",
+      "attributes": [
+        {
+          "key": "dribbling",
+          "label": "Dribbling"
+        },
+        {
+          "key": "passing",
+          "label": "Passing"
+        },
+        {
+          "key": "speed-w-ball",
+          "label": "Speed w/ ball"
+        }
+      ]
+    },
+    {
+      "key": "defense-rebounding",
+      "label": "Defense/Rebounding",
+      "attributes": [
+        {
+          "key": "offensive-rebounding",
+          "label": "Offensive rebounding"
+        },
+        {
+          "key": "defensive-rebounding",
+          "label": "Defensive rebounding"
+        },
+        {
+          "key": "perimeter-defense",
+          "label": "Perimeter defense"
+        },
+        {
+          "key": "steal",
+          "label": "Steal"
+        },
+        {
+          "key": "interior-defense",
+          "label": "Interior defense"
+        },
+        {
+          "key": "block",
+          "label": "Block"
+        }
+      ]
+    },
+    {
+      "key": "physicals-athleticism",
+      "label": "Physicals/Athleticism",
+      "attributes": [
+        {
+          "key": "speed",
+          "label": "Speed"
+        },
+        {
+          "key": "vertical",
+          "label": "Vertical"
+        },
+        {
+          "key": "strength",
+          "label": "Strength"
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": "ant-brown-jr",
+      "name": "Ant Brown Jr.",
+      "overall": 75,
+      "categoryRatings": {
+        "finishing": 64,
+        "shooting": 74,
+        "playmaking": 78,
+        "defense-rebounding": 55,
+        "physicals-athleticism": 73
+      },
+      "attributes": {
+        "layup": 74,
+        "dunk": 65,
+        "post-scoring": 52,
+        "mid-range": 72,
+        "3-point": 74,
+        "free-throw": 75,
+        "dribbling": 75,
+        "passing": 78,
+        "speed-w-ball": 80,
+        "offensive-rebounding": 51,
+        "defensive-rebounding": 60,
+        "perimeter-defense": 61,
+        "steal": 63,
+        "interior-defense": 48,
+        "block": 45,
+        "speed": 82,
+        "vertical": 74,
+        "strength": 64
+      },
+      "metadata": {},
+      "image": "assets/players/ant-brown-jr.jpg"
+    },
+    {
+      "id": "gabe-nesmith",
+      "name": "Gabe Nesmith",
+      "overall": 75,
+      "categoryRatings": {
+        "finishing": 67,
+        "shooting": 70,
+        "playmaking": 69,
+        "defense-rebounding": 63,
+        "physicals-athleticism": 72
+      },
+      "attributes": {
+        "layup": 68,
+        "dunk": 71,
+        "post-scoring": 61,
+        "mid-range": 63,
+        "3-point": 75,
+        "free-throw": 73,
+        "dribbling": 70,
+        "passing": 65,
+        "speed-w-ball": 71,
+        "offensive-rebounding": 56,
+        "defensive-rebounding": 64,
+        "perimeter-defense": 72,
+        "steal": 70,
+        "interior-defense": 57,
+        "block": 56,
+        "speed": 75,
+        "vertical": 77,
+        "strength": 63
+      },
+      "metadata": {},
+      "image": "assets/players/gabe-nesmith.jpg"
+    },
+    {
+      "id": "ethan-mgbako",
+      "name": "Ethan Mgbako",
+      "overall": 72,
+      "categoryRatings": {
+        "finishing": 62,
+        "shooting": 65,
+        "playmaking": 67,
+        "defense-rebounding": 62,
+        "physicals-athleticism": 69
+      },
+      "attributes": {
+        "layup": 64,
+        "dunk": 66,
+        "post-scoring": 55,
+        "mid-range": 54,
+        "3-point": 68,
+        "free-throw": 72,
+        "dribbling": 66,
+        "passing": 64,
+        "speed-w-ball": 70,
+        "offensive-rebounding": 58,
+        "defensive-rebounding": 67,
+        "perimeter-defense": 70,
+        "steal": 65,
+        "interior-defense": 60,
+        "block": 52,
+        "speed": 71,
+        "vertical": 74,
+        "strength": 61
+      },
+      "metadata": {},
+      "image": "assets/players/ethan-mgbako.jpg"
+    },
+    {
+      "id": "tyler-tanner",
+      "name": "Tyler Tanner",
+      "overall": 93,
+      "categoryRatings": {
+        "finishing": 81,
+        "shooting": 85,
+        "playmaking": 96,
+        "defense-rebounding": 73,
+        "physicals-athleticism": 85
+      },
+      "attributes": {
+        "layup": 90,
+        "dunk": 88,
+        "post-scoring": 66,
+        "mid-range": 87,
+        "3-point": 83,
+        "free-throw": 86,
+        "dribbling": 96,
+        "passing": 94,
+        "speed-w-ball": 97,
+        "offensive-rebounding": 54,
+        "defensive-rebounding": 66,
+        "perimeter-defense": 94,
+        "steal": 99,
+        "interior-defense": 56,
+        "block": 71,
+        "speed": 96,
+        "vertical": 92,
+        "strength": 68
+      },
+      "metadata": {},
+      "image": "assets/players/tyler-tanner.jpg"
+    },
+    {
+      "id": "t-o-barrett",
+      "name": "T.O. Barrett",
+      "overall": 77,
+      "categoryRatings": {
+        "finishing": 69,
+        "shooting": 68,
+        "playmaking": 79,
+        "defense-rebounding": 61,
+        "physicals-athleticism": 73
+      },
+      "attributes": {
+        "layup": 74,
+        "dunk": 71,
+        "post-scoring": 62,
+        "mid-range": 62,
+        "3-point": 64,
+        "free-throw": 77,
+        "dribbling": 80,
+        "passing": 83,
+        "speed-w-ball": 74,
+        "offensive-rebounding": 52,
+        "defensive-rebounding": 63,
+        "perimeter-defense": 81,
+        "steal": 83,
+        "interior-defense": 48,
+        "block": 40,
+        "speed": 76,
+        "vertical": 70,
+        "strength": 72
+      },
+      "metadata": {},
+      "image": "assets/players/t-o-barrett.jpg"
+    },
+    {
+      "id": "chandler-bing",
+      "name": "Chandler Bing",
+      "overall": 82,
+      "categoryRatings": {
+        "finishing": 76,
+        "shooting": 65,
+        "playmaking": 72,
+        "defense-rebounding": 70,
+        "physicals-athleticism": 84
+      },
+      "attributes": {
+        "layup": 78,
+        "dunk": 83,
+        "post-scoring": 68,
+        "mid-range": 66,
+        "3-point": 65,
+        "free-throw": 63,
+        "dribbling": 71,
+        "passing": 70,
+        "speed-w-ball": 75,
+        "offensive-rebounding": 62,
+        "defensive-rebounding": 76,
+        "perimeter-defense": 86,
+        "steal": 80,
+        "interior-defense": 60,
+        "block": 56,
+        "speed": 82,
+        "vertical": 86,
+        "strength": 84
+      },
+      "metadata": {},
+      "image": "assets/players/chandler-bing.jpg"
+    },
+    {
+      "id": "bangot-dak",
+      "name": "Bangot Dak",
+      "overall": 83,
+      "categoryRatings": {
+        "finishing": 79,
+        "shooting": 70,
+        "playmaking": 68,
+        "defense-rebounding": 74,
+        "physicals-athleticism": 76
+      },
+      "attributes": {
+        "layup": 81,
+        "dunk": 85,
+        "post-scoring": 70,
+        "mid-range": 75,
+        "3-point": 64,
+        "free-throw": 72,
+        "dribbling": 70,
+        "passing": 60,
+        "speed-w-ball": 73,
+        "offensive-rebounding": 74,
+        "defensive-rebounding": 84,
+        "perimeter-defense": 64,
+        "steal": 59,
+        "interior-defense": 80,
+        "block": 82,
+        "speed": 78,
+        "vertical": 81,
+        "strength": 68
+      },
+      "metadata": {},
+      "image": "assets/players/bangot-dak.jpg"
+    },
+    {
+      "id": "berke-buyuktuncel",
+      "name": "Berke Buyuktuncel",
+      "overall": 80,
+      "categoryRatings": {
+        "finishing": 82,
+        "shooting": 62,
+        "playmaking": 63,
+        "defense-rebounding": 72,
+        "physicals-athleticism": 73
+      },
+      "attributes": {
+        "layup": 85,
+        "dunk": 79,
+        "post-scoring": 83,
+        "mid-range": 62,
+        "3-point": 62,
+        "free-throw": 61,
+        "dribbling": 64,
+        "passing": 66,
+        "speed-w-ball": 59,
+        "offensive-rebounding": 78,
+        "defensive-rebounding": 85,
+        "perimeter-defense": 58,
+        "steal": 63,
+        "interior-defense": 77,
+        "block": 72,
+        "speed": 68,
+        "vertical": 64,
+        "strength": 86
+      },
+      "metadata": {},
+      "image": "assets/players/berke-buyuktuncel.jpg"
+    },
+    {
+      "id": "mavrick-hawkins",
+      "name": "Mavrick Hawkins",
+      "overall": 66,
+      "categoryRatings": {
+        "finishing": 59,
+        "shooting": 62,
+        "playmaking": 65,
+        "defense-rebounding": 49,
+        "physicals-athleticism": 68
+      },
+      "attributes": {
+        "layup": 66,
+        "dunk": 60,
+        "post-scoring": 52,
+        "mid-range": 58,
+        "3-point": 63,
+        "free-throw": 66,
+        "dribbling": 62,
+        "passing": 65,
+        "speed-w-ball": 68,
+        "offensive-rebounding": 42,
+        "defensive-rebounding": 48,
+        "perimeter-defense": 59,
+        "steal": 60,
+        "interior-defense": 44,
+        "block": 41,
+        "speed": 77,
+        "vertical": 62,
+        "strength": 64
+      },
+      "metadata": {},
+      "image": "assets/players/mavrick-hawkins.jpg"
+    },
+    {
+      "id": "chase-byington",
+      "name": "Chase Byington",
+      "overall": 64,
+      "categoryRatings": {
+        "finishing": 54,
+        "shooting": 61,
+        "playmaking": 66,
+        "defense-rebounding": 49,
+        "physicals-athleticism": 64
+      },
+      "attributes": {
+        "layup": 62,
+        "dunk": 50,
+        "post-scoring": 50,
+        "mid-range": 55,
+        "3-point": 60,
+        "free-throw": 69,
+        "dribbling": 63,
+        "passing": 64,
+        "speed-w-ball": 70,
+        "offensive-rebounding": 40,
+        "defensive-rebounding": 51,
+        "perimeter-defense": 63,
+        "steal": 58,
+        "interior-defense": 40,
+        "block": 40,
+        "speed": 74,
+        "vertical": 57,
+        "strength": 60
+      },
+      "metadata": {},
+      "image": "assets/players/chase-byington.jpg"
+    },
+    {
+      "id": "ace-glass",
+      "name": "Ace Glass",
+      "overall": 85,
+      "categoryRatings": {
+        "finishing": 73,
+        "shooting": 87,
+        "playmaking": 84,
+        "defense-rebounding": 65,
+        "physicals-athleticism": 79
+      },
+      "attributes": {
+        "layup": 84,
+        "dunk": 72,
+        "post-scoring": 64,
+        "mid-range": 86,
+        "3-point": 86,
+        "free-throw": 90,
+        "dribbling": 86,
+        "passing": 81,
+        "speed-w-ball": 85,
+        "offensive-rebounding": 57,
+        "defensive-rebounding": 74,
+        "perimeter-defense": 75,
+        "steal": 72,
+        "interior-defense": 59,
+        "block": 51,
+        "speed": 86,
+        "vertical": 80,
+        "strength": 71
+      },
+      "metadata": {},
+      "image": "assets/players/ace-glass.jpg"
+    },
+    {
+      "id": "baylor-allen",
+      "name": "Baylor Allen",
+      "overall": 65,
+      "categoryRatings": {
+        "finishing": 55,
+        "shooting": 63,
+        "playmaking": 66,
+        "defense-rebounding": 51,
+        "physicals-athleticism": 63
+      },
+      "attributes": {
+        "layup": 63,
+        "dunk": 52,
+        "post-scoring": 51,
+        "mid-range": 59,
+        "3-point": 62,
+        "free-throw": 67,
+        "dribbling": 64,
+        "passing": 64,
+        "speed-w-ball": 69,
+        "offensive-rebounding": 43,
+        "defensive-rebounding": 50,
+        "perimeter-defense": 62,
+        "steal": 60,
+        "interior-defense": 48,
+        "block": 43,
+        "speed": 75,
+        "vertical": 59,
+        "strength": 54
+      },
+      "metadata": {},
+      "image": "assets/players/baylor-allen.jpg"
+    },
+    {
+      "id": "sebastian-williams-adams",
+      "name": "Sebastian Williams-Adams",
+      "overall": 82,
+      "categoryRatings": {
+        "finishing": 77,
+        "shooting": 66,
+        "playmaking": 69,
+        "defense-rebounding": 76,
+        "physicals-athleticism": 77
+      },
+      "attributes": {
+        "layup": 80,
+        "dunk": 81,
+        "post-scoring": 70,
+        "mid-range": 64,
+        "3-point": 68,
+        "free-throw": 65,
+        "dribbling": 67,
+        "passing": 68,
+        "speed-w-ball": 71,
+        "offensive-rebounding": 70,
+        "defensive-rebounding": 78,
+        "perimeter-defense": 81,
+        "steal": 80,
+        "interior-defense": 70,
+        "block": 75,
+        "speed": 75,
+        "vertical": 82,
+        "strength": 73
+      },
+      "metadata": {},
+      "image": "assets/players/sebastian-williams-adams.jpg"
+    },
+    {
+      "id": "jayden-leverett",
+      "name": "Jayden Leverett",
+      "overall": 75,
+      "categoryRatings": {
+        "finishing": 82,
+        "shooting": 56,
+        "playmaking": 56,
+        "defense-rebounding": 68,
+        "physicals-athleticism": 73
+      },
+      "attributes": {
+        "layup": 82,
+        "dunk": 86,
+        "post-scoring": 78,
+        "mid-range": 52,
+        "3-point": 59,
+        "free-throw": 58,
+        "dribbling": 56,
+        "passing": 57,
+        "speed-w-ball": 54,
+        "offensive-rebounding": 73,
+        "defensive-rebounding": 80,
+        "perimeter-defense": 55,
+        "steal": 52,
+        "interior-defense": 76,
+        "block": 70,
+        "speed": 66,
+        "vertical": 70,
+        "strength": 82
+      },
+      "metadata": {},
+      "image": "assets/players/jayden-leverett.jpg"
+    },
+    {
+      "id": "jackson-sheffield",
+      "name": "Jackson Sheffield",
+      "overall": 71,
+      "categoryRatings": {
+        "finishing": 71,
+        "shooting": 53,
+        "playmaking": 56,
+        "defense-rebounding": 63,
+        "physicals-athleticism": 71
+      },
+      "attributes": {
+        "layup": 73,
+        "dunk": 75,
+        "post-scoring": 64,
+        "mid-range": 51,
+        "3-point": 52,
+        "free-throw": 55,
+        "dribbling": 54,
+        "passing": 53,
+        "speed-w-ball": 62,
+        "offensive-rebounding": 69,
+        "defensive-rebounding": 76,
+        "perimeter-defense": 45,
+        "steal": 48,
+        "interior-defense": 71,
+        "block": 69,
+        "speed": 70,
+        "vertical": 68,
+        "strength": 74
+      },
+      "metadata": {},
+      "image": "assets/players/jackson-sheffield.jpg"
+    }
+  ]
+}

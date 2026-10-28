@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-theme="vandy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roster Ratings</title>
+  <meta name="description" content="Interactive roster ratings.">
+  <!-- Web fonts (title: EB Garamond, deck: Libre Franklin). Body uses system Georgia. Remove this block to go fully offline. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700;800&family=Libre+Franklin:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/chart.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body id="top">
+  <a class="skip" href="#roster">Skip to roster</a>
+
+  <main>
+    <!-- SECTION A: article header — content/article.json -->
+    <header class="masthead" id="masthead"></header>
+
+    <!-- SECTION B: interactive roster — data/hotspots.json -->
+    <section class="roster" id="roster" aria-label="Interactive team roster" tabindex="-1">
+      <p class="roster__hint"><span class="hint--hover">Hover</span><span class="hint--touch">Tap</span> for a glance at a player's rating · click through to read the full breakdown</p>
+      <div id="roster-host"></div>
+    </section>
+
+    <!-- SECTION C: player profiles, generated from data/players.json -->
+    <section class="profiles" id="profiles" aria-label="Player profiles"></section>
+
+    <!-- SECTION D: concluding text — "conclusion" in content/article.json -->
+    <section class="conclusion" id="conclusion" aria-label="Conclusion"></section>
+  </main>
+
+  <footer class="foot"><p>Ratings were fabricated for editorial purposes.</p></footer>
+  <noscript><p style="padding:2rem">This interactive page needs JavaScript.</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

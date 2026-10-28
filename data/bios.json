@@ -1,0 +1,125 @@
+{
+  "_help": "Roster-table info shown in the 'card' profile layout. Key = player id. Blank/missing = N/A. Height as feet-inches (6-3).",
+  "players": {
+    "ant-brown-jr": {
+      "number": 0,
+      "class": "Freshman",
+      "height": "6-3",
+      "weight": 190,
+      "hometown": "Forestville, Md.",
+      "highSchool": "Archbishop Carroll"
+    },
+    "gabe-nesmith": {
+      "number": 1,
+      "class": "Freshman",
+      "height": "6-6",
+      "weight": 201,
+      "hometown": "Palm Beach, Fla.",
+      "highSchool": "Overtime Elite"
+    },
+    "ethan-mgbako": {
+      "number": 2,
+      "class": "Freshman",
+      "height": "6-6",
+      "weight": 210,
+      "hometown": "Somerset, N.J.",
+      "highSchool": "Oak Hill Academy"
+    },
+    "tyler-tanner": {
+      "number": 3,
+      "class": "Junior",
+      "height": "6-0",
+      "weight": 181,
+      "hometown": "Brentwood, Tenn.",
+      "highSchool": "Brentwood Academy"
+    },
+    "t-o-barrett": {
+      "number": 5,
+      "class": "Junior",
+      "height": "6-6",
+      "weight": 215,
+      "hometown": "Oklahoma City, Okla.",
+      "highSchool": "Link Academy"
+    },
+    "chandler-bing": {
+      "number": 7,
+      "class": "Sophomore",
+      "height": "6-6",
+      "weight": 215,
+      "hometown": "Atlanta, Ga.",
+      "highSchool": "Pace Academy"
+    },
+    "bangot-dak": {
+      "number": 8,
+      "class": "Senior",
+      "height": "6-11",
+      "weight": 210,
+      "hometown": "Lincoln, Neb.",
+      "highSchool": "Lincoln Southeast"
+    },
+    "berke-buyuktuncel": {
+      "number": 9,
+      "class": "Senior",
+      "height": "6-10",
+      "weight": 260,
+      "hometown": "Bursa, Türkiye",
+      "highSchool": null
+    },
+    "mavrick-hawkins": {
+      "number": 11,
+      "class": "Freshman",
+      "height": "6-3",
+      "weight": 195,
+      "hometown": "Kansas City, Mo.",
+      "highSchool": "Pembroke Hill School"
+    },
+    "chase-byington": {
+      "number": 12,
+      "class": "Freshman",
+      "height": "6-5",
+      "weight": 185,
+      "hometown": "Nashville, Tenn.",
+      "highSchool": "Ensworth School"
+    },
+    "ace-glass": {
+      "number": 21,
+      "class": "Sophomore",
+      "height": "6-3",
+      "weight": 200,
+      "hometown": "Rancho Cucamonga, Calif.",
+      "highSchool": "Rancho Cucamonga"
+    },
+    "baylor-allen": {
+      "number": 24,
+      "class": "Freshman",
+      "height": "5-11",
+      "weight": 160,
+      "hometown": "Murfreesboro, Tenn.",
+      "highSchool": "Providence Christian Academy"
+    },
+    "sebastian-williams-adams": {
+      "number": 33,
+      "class": "Sophomore",
+      "height": "6-9",
+      "weight": 251,
+      "hometown": "Houston, Texas",
+      "highSchool": "St. John's"
+    },
+    "jayden-leverett": {
+      "number": 34,
+      "class": "Sophomore",
+      "height": "6-11",
+      "weight": 266,
+      "hometown": "El Paso, Texas",
+      "highSchool": "Chapin"
+    },
+    "jackson-sheffield": {
+      "number": 35,
+      "class": "Freshman",
+      "height": "6-10",
+      "weight": 241,
+      "hometown": "Hoover, Ala.",
+      "highSchool": "Hoover"
+    }
+  }
+}

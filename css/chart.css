@@ -1,0 +1,43 @@
+/* Attribute chart — styled only with tokens. Shared by the article and charts/player.html. */
+.pchart { font-family: var(--font-ui); color: var(--c-text); background: var(--c-surface); padding: 1.25rem 1.25rem 1rem; container-type: inline-size; }
+.pchart__error { padding: 1rem; color: var(--c-text-muted); font-size: var(--fs-small); }
+.pchart__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.1rem; padding-bottom: .8rem; border-bottom: var(--border); }
+.pchart__name { margin: 0; font: var(--display-weight) 1.6rem/1 var(--font-display); text-transform: var(--display-transform); letter-spacing: var(--display-tracking); }
+
+.ovr { display: inline-flex; flex-direction: column; align-items: center; line-height: 1; background: var(--c-primary); color: var(--c-on-primary); padding: .35rem .7rem .3rem; border-radius: var(--radius); min-width: 3.6rem; }
+.ovr__num { font: 900 2.2rem/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.ovr__lbl { font: 700 .62rem/1 var(--font-ui); letter-spacing: .18em; margin-top: .15rem; }
+
+.pchart__groups { display: grid; gap: 1.4rem 2.2rem; grid-template-columns: 1fr; }
+@container (min-width: 640px) { .pchart__groups { grid-template-columns: 1fr 1fr; } }
+@container (min-width: 1000px) { .pchart__groups { grid-template-columns: 1fr 1fr 1fr; } }
+
+.group__head { display: flex; align-items: center; justify-content: space-between; border-bottom: var(--border-strong); padding-bottom: .3rem; margin-bottom: .5rem; }
+.group__title { margin: 0; font: var(--display-weight) 1.05rem/1.1 var(--font-display); text-transform: var(--display-transform); letter-spacing: var(--display-tracking); }
+.group__rating { font: 900 1.25rem/1 var(--font-display); font-variant-numeric: tabular-nums; color: var(--c-primary); border: 1px solid currentColor; border-radius: var(--radius); padding: .15rem .45rem; min-width: 2.1rem; text-align: center; }
+.attrs { list-style: none; margin: 0; padding: 0; }
+.attr { display: grid; grid-template-columns: minmax(7.5rem, 38%) 1fr 2.2rem; align-items: center; gap: .6rem; padding: .28rem 0; }
+.attr__label { font-size: .86rem; color: var(--c-text); line-height: 1.15; }
+.attr__val { font: 800 1.05rem/1 var(--font-display); font-variant-numeric: tabular-nums; text-align: right; }
+@container (max-width: 380px) { .attr { grid-template-columns: 1fr 2.2rem; } .attr .bar { grid-column: 1 / -1; grid-row: 2; } .attr__val { grid-row: 1; grid-column: 2; } }
+
+.bar { height: .62rem; background: var(--bar-track); border-radius: 99px; overflow: hidden; }
+.bar__fill { display: block; height: 100%; width: 0; border-radius: inherit; background: var(--bar-low); }
+.is-in .bar__fill { width: var(--w); transition: width var(--anim-bars) cubic-bezier(.2,.7,.2,1); }
+[data-tier="elite"] > .bar__fill { background: var(--bar-elite); }
+[data-tier="high"] > .bar__fill { background: var(--bar-high); }
+[data-tier="mid"] > .bar__fill { background: var(--bar-mid); }
+[data-tier="low"] > .bar__fill { background: var(--bar-low); }
+.bar[data-tier="na"] { background: repeating-linear-gradient(45deg, var(--bar-na) 0 4px, transparent 4px 8px); }
+.attr__val[data-tier="na"], .group__rating[data-tier="na"] { color: var(--c-text-muted); font-size: .8rem; }
+/* per-category colors (opt-in: .pchart--cat in the card layout; always on in the roster hover card).
+   The gradient is pinned to the full 0-max track: low ratings only reach the muted end, high ratings the vivid end. */
+.pchart--cat .bar__fill, .rcard .bar__fill { background-size: calc(10000% / var(--wn, 100)) 100%; background-repeat: no-repeat; }
+.pchart--cat .group[data-cat="finishing"] .bar__fill, .rcard__row[data-cat="finishing"] .bar__fill { background-image: linear-gradient(90deg, var(--cat-finishing-from), var(--cat-finishing-to)); }
+.pchart--cat .group[data-cat="shooting"] .bar__fill, .rcard__row[data-cat="shooting"] .bar__fill { background-image: linear-gradient(90deg, var(--cat-shooting-from), var(--cat-shooting-to)); }
+.pchart--cat .group[data-cat="playmaking"] .bar__fill, .rcard__row[data-cat="playmaking"] .bar__fill { background-image: linear-gradient(90deg, var(--cat-playmaking-from), var(--cat-playmaking-to)); }
+.pchart--cat .group[data-cat="defense-rebounding"] .bar__fill, .rcard__row[data-cat="defense-rebounding"] .bar__fill { background-image: linear-gradient(90deg, var(--cat-defense-rebounding-from), var(--cat-defense-rebounding-to)); }
+.pchart--cat .group[data-cat="physicals-athleticism"] .bar__fill, .rcard__row[data-cat="physicals-athleticism"] .bar__fill { background-image: linear-gradient(90deg, var(--cat-physicals-athleticism-from), var(--cat-physicals-athleticism-to)); }
+.pchart--cat .bar[data-tier="na"] .bar__fill, .rcard .bar[data-tier="na"] .bar__fill { background: none; }
+
+@media (prefers-reduced-motion: reduce) { .is-in .bar__fill { transition: none; } }

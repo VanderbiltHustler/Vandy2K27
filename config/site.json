@@ -1,0 +1,23 @@
+{
+  "_help": "Site-wide settings. Visual tokens live in css/tokens.css; this file selects the theme and behaviour.",
+  "theme": "vandy",
+  "themes": ["vandy", "dark", "editorial"],
+  "tokenOverrides": {},
+  "profileOrder": "roster",
+  "chartMode": "iframe",
+  "showHeaderThemePicker": true,
+  "roster": {
+    "image": "assets/roster.webp",
+    "showBadges": true,
+    "placeholderAspect": 1.185
+  },
+  "categoryShortLabels": {
+    "finishing": "Finishing",
+    "shooting": "Shooting",
+    "playmaking": "Playmaking",
+    "defense-rebounding": "Def/Reb",
+    "physicals-athleticism": "Physicals"
+  },
+  "cardJerseyOffset": 0.9,
+  "tiers": { "elite": 90, "high": 80, "mid": 70 }
+}

@@ -1,0 +1,204 @@
+{
+  "_help": "x,y = hotspot CENTER as % of image width/height; w,h = size in the same units. tooltip: auto|left|right|top|bottom. playerId must match an id in players.json.",
+  "image": {
+    "src": "assets/roster.webp",
+    "alt": "Vanderbilt men's basketball roster headshots",
+    "aspect": 1.1855
+  },
+  "hotspots": [
+    {
+      "playerId": "tyler-tanner",
+      "x": 11.27,
+      "y": 16.18,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "ace-glass",
+      "x": 30.59,
+      "y": 16.18,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "bangot-dak",
+      "x": 49.84,
+      "y": 16.18,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "chandler-bing",
+      "x": 69.17,
+      "y": 16.18,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "sebastian-williams-adams",
+      "x": 88.42,
+      "y": 16.18,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "berke-buyuktuncel",
+      "x": 11.27,
+      "y": 49.02,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "t-o-barrett",
+      "x": 30.59,
+      "y": 49.02,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "jayden-leverett",
+      "x": 49.84,
+      "y": 49.02,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "ant-brown-jr",
+      "x": 69.17,
+      "y": 49.02,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "gabe-nesmith",
+      "x": 88.42,
+      "y": 49.02,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "ethan-mgbako",
+      "x": 11.27,
+      "y": 81.76,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "jackson-sheffield",
+      "x": 30.59,
+      "y": 81.76,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "mavrick-hawkins",
+      "x": 49.84,
+      "y": 81.76,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "baylor-allen",
+      "x": 69.17,
+      "y": 81.76,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    },
+    {
+      "playerId": "chase-byington",
+      "x": 88.42,
+      "y": 81.76,
+      "w": 15.0,
+      "h": 27.0,
+      "shape": "ellipse",
+      "tooltip": "auto"
+    }
+  ],
+  "grid": {
+    "_help": "Pixel bounds of each portrait inside the roster image (used to lay out the captioned grid).",
+    "width": 1278,
+    "height": 1078,
+    "cols": [
+      [
+        24,
+        264
+      ],
+      [
+        271,
+        511
+      ],
+      [
+        517,
+        757
+      ],
+      [
+        764,
+        1004
+      ],
+      [
+        1010,
+        1250
+      ]
+    ],
+    "rows": [
+      [
+        24,
+        344
+      ],
+      [
+        378,
+        698
+      ],
+      [
+        731,
+        1051
+      ]
+    ],
+    "display": [
+      "tyler-tanner",
+      "chandler-bing",
+      "jayden-leverett",
+      "ace-glass",
+      "bangot-dak",
+      "sebastian-williams-adams",
+      "berke-buyuktuncel",
+      "t-o-barrett",
+      "ant-brown-jr",
+      "gabe-nesmith",
+      "ethan-mgbako",
+      "jackson-sheffield",
+      "mavrick-hawkins",
+      "baylor-allen",
+      "chase-byington"
+    ],
+    "_display_help": "Order the portraits appear in the grid (left-to-right, top-to-bottom) and in the profile carousel. Each portrait is still cropped from its own spot in the photo."
+  }
+}

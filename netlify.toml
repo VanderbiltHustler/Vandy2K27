@@ -1,0 +1,9 @@
+# Static deploy: no build step. Publish the repo root.
+[build]
+  publish = "."
+
+# Let other sites iframe the standalone charts (remove if you only embed on your own domain).
+[[headers]]
+  for = "/charts/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors *"

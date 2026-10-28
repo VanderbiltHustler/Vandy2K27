@@ -1,0 +1,18 @@
+{
+  "_help": "Label shown above each player's name. Key = player id. Use any text (Returner, Transfer, Freshman, Senior...). Missing/empty = no tag.",
+  "tyler-tanner": "Returner",
+  "chandler-bing": "Returner",
+  "jayden-leverett": "Returner",
+  "ace-glass": "Transfer",
+  "bangot-dak": "Transfer",
+  "sebastian-williams-adams": "Transfer",
+  "berke-buyuktuncel": "Transfer",
+  "t-o-barrett": "Transfer",
+  "ant-brown-jr": "Freshman",
+  "gabe-nesmith": "Freshman",
+  "ethan-mgbako": "Freshman",
+  "jackson-sheffield": "Freshman",
+  "mavrick-hawkins": "Freshman",
+  "baylor-allen": "Freshman",
+  "chase-byington": "Freshman"
+}

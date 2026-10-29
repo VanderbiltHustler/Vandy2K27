@@ -30,6 +30,8 @@ main { position: relative; z-index: 1; background: var(--c-bg); box-shadow: 0 -1
 .masthead__dek { font: 400 1.35rem/1.4 var(--font-deck); color: var(--c-text-muted); margin: 1rem 0 1.4rem; }
 .masthead__by { font: 600 1.1rem var(--font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--c-text-muted); margin: 0 0 1.5rem; padding-top: 1rem; border-top: var(--border-strong); }
 .masthead__intro p { margin: 0 0 1.1em; }
+.masthead__intro a, .conclusion a, .pbox a { color: var(--c-primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; transition: color var(--anim-speed); }
+.masthead__intro a:hover, .conclusion a:hover, .pbox a:hover { color: var(--c-accent); text-decoration-thickness: 2px; }
 .conclusion { max-width: var(--layout-wide); margin: 0 auto; padding: 1rem clamp(.5rem, 2vw, 1.5rem) 3rem; scroll-margin-top: var(--header-h); }
 .conclusion p { margin: 0 0 1.1em; }
 .conclusion .placeholder { display: block; overflow-wrap: anywhere; }

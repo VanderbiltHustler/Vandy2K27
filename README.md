@@ -11,8 +11,7 @@ Hover a face in the roster for a quick ratings card, then flip through a full br
 - **Clickable roster** with 2K-style hover cards (tap on touch screens)
 - **Player carousel** with arrows, dots, keyboard arrows and swipe
 - **Attribute charts** for all 18 ratings, color-coded by category
-- **Fully static**: plain HTML, CSS and JavaScript, no build step and no backend
-- **Content kept separate from data**, so the writing and the ratings can each be updated on their own
+- **Static**:
 
 ## How it works
 

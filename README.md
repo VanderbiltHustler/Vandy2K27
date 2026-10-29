@@ -35,10 +35,6 @@ Hover a face in the roster for a quick ratings card, then flip through a full br
 - **Writing:** edit `content/article.json` and `content/analysis.json`. Each paragraph is a string, and HTML such as links is allowed.
 - **Colors and fonts:** change the values in `css/tokens.css`.
 
-## Deploying
-
-There is nothing to build. Publish the folder as-is on any static host, such as Netlify, GitHub Pages or Cloudflare Pages. A `netlify.toml` is included.
-
 ## Credits
 
 Written and rated by Tristan Rutman. Project was created with the assistance of Alexander Cheng and the Vanderbilt Hustler Data section..

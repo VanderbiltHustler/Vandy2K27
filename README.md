@@ -36,4 +36,4 @@ Hover a face in the roster for a quick ratings card, then flip through a full br
 
 ## Credits
 
-Written and rated by Tristan Rutman. Project was created with the assistance of Alexander Cheng and the Vanderbilt Hustler Data section..
+Written and rated by Tristan Rutman. Project was created with the assistance of Alexander Cheng and the Vanderbilt Hustler Data section.
